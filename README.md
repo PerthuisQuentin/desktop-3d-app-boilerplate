@@ -1,5 +1,11 @@
 # Desktop 3D Application Boilerplate
 
+[![npm (scoped)](https://img.shields.io/npm/v/@cycle/core.svg)](desktop-3d-app-boilerplate)
+[![npm](https://img.shields.io/npm/l/express.svg)](desktop-3d-app-boilerplate)
+[![Dependency Status](https://gemnasium.com/badges/github.com/PerthuisQuentin/desktop-3d-app-boilerplate.svg)](https://gemnasium.com/github.com/PerthuisQuentin/desktop-3d-app-boilerplate)
+
+Boilerplate to make 3d desktop & web applications with Electron & Three & Webpack & Typescript & Babel
+
 ## Usage
 
 ### Install
