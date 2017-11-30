@@ -1,0 +1,30 @@
+{
+    "name": "desktop-3d-app-boilerplate",
+    "version": "1.0.0",
+    "description": "Boilerplate to make 3d desktop applications with electron/three/webpack/typescript/babel",
+    "author": {
+        "name": "Quentin Perthuis"
+    },
+    "scripts": {
+        "build": "./node_modules/.bin/webpack --progress --colors",
+        "dev": "./node_modules/.bin/webpack-dev-server --progress --colors",
+        "app": "./node_modules/.bin/electron ./electron.js",
+        "eslint": "./node_modules/.bin/eslint . --ext ts,js"
+    },
+    "devDependencies": {
+        "webpack": "^3.8.1",
+        "webpack-dev-server": "^2.9.5",
+        "webpack-bundle-analyzer": "^2.9.1",
+        "html-webpack-plugin": "^2.30.1",
+        "electron": "^1.7.9",
+        "typescript": "^2.6.2",
+        "ts-loader": "^3.2.0",
+        "babel-core": "^6.26.0",
+        "babel-loader": "^7.1.2",
+        "babel-preset-es2015-native-modules": "^6.9.4",
+        "eslint": "^4.12.1",
+        "typescript-eslint-parser": "^9.0.1",
+        "three": "^0.88.0",
+        "@types/three": "^0.84.33"
+    }
+}

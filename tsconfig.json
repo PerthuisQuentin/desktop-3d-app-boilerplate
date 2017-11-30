@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "noImplicitAny": true,
+        "removeComments": true,
+        "target": "es2015",
+        "module": "none",
+        "typeRoots": [
+            "node_modules/@types"
+        ]
+    },
+    "exclude" : [
+        "./node_modules" 
+    ]
+}
