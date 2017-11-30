@@ -1,7 +1,7 @@
 # Desktop 3D Application Boilerplate
 
-[![npm (scoped)](https://img.shields.io/npm/v/@cycle/core.svg)](desktop-3d-app-boilerplate)
-[![npm](https://img.shields.io/npm/l/express.svg)](desktop-3d-app-boilerplate)
+[![npm](https://badge.fury.io/js/desktop-3d-app-boilerplate.svg)](https://www.npmjs.com/package/desktop-3d-app-boilerplate)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Dependency Status](https://gemnasium.com/badges/github.com/PerthuisQuentin/desktop-3d-app-boilerplate.svg)](https://gemnasium.com/github.com/PerthuisQuentin/desktop-3d-app-boilerplate)
 
 Boilerplate to make 3d desktop & web applications with Electron & Three & Webpack & Typescript & Babel
