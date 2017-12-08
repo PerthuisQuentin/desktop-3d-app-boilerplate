@@ -5,10 +5,14 @@ let babelOptions = {
 };
 
 module.exports = {
-	entry: './entry.ts',
+	entry: './src/entry.ts',
 	output: {
 		path: __dirname + '/build',
 		filename: 'bundle.js'
+	},
+	devtool: 'inline-source-map',
+	devServer: {
+		contentBase: './build'
 	},
 	module: {
 		rules: [

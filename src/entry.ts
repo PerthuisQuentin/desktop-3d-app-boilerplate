@@ -1,6 +1,6 @@
 import { WebGLRenderer } from 'three';
 
-import { scene, camera, mesh } from './src/content';
+import { scene, camera, mesh } from './content';
 
 var renderer: WebGLRenderer;
 

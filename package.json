@@ -1,13 +1,13 @@
 {
     "name": "desktop-3d-app-boilerplate",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Boilerplate to make 3d desktop & web applications with Electron & Three & Webpack & Typescript & Babel",
     "author": {
         "name": "Quentin Perthuis"
     },
     "scripts": {
         "build": "./node_modules/.bin/webpack --progress --colors",
-        "dev": "./node_modules/.bin/webpack-dev-server --progress --colors",
+        "dev": "./node_modules/.bin/webpack-dev-server --progress --colors --open",
         "app": "./node_modules/.bin/electron ./electron.js",
         "eslint": "./node_modules/.bin/eslint . --ext ts,js"
     },

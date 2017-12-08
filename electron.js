@@ -13,12 +13,12 @@ function createWindow () {
 	window.maximize();
 
 	window.loadURL(Url.format({
-		pathname: Path.join(__dirname, 'index.html'),
+		pathname: Path.join(__dirname, './build/index.html'),
 		protocol: 'file:',
 		slashes: true
 	}));
 
-	window.webContents.openDevTools();
+	//window.webContents.openDevTools();
 
 	window.on('closed', () => {
 		window = null;
