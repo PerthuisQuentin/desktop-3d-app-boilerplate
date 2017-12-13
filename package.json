@@ -1,7 +1,8 @@
 {
     "name": "desktop-3d-app-boilerplate",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "Boilerplate to make 3d desktop & web applications with Electron & Three & Webpack & Typescript & Babel",
+    "repository": "PerthuisQuentin/desktop-3d-app-boilerplate",
     "author": {
         "name": "Quentin Perthuis"
     },
@@ -23,7 +24,7 @@
         "babel-loader": "^7.1.2",
         "babel-preset-es2015-native-modules": "^6.9.4",
         "eslint": "^4.12.1",
-        "typescript-eslint-parser": "^9.0.1",
+        "typescript-eslint-parser": "^10.0.0",
         "three": "^0.88.0",
         "@types/three": "^0.84.33"
     }
