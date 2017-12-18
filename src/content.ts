@@ -1,23 +1,21 @@
-import {
-	Scene,
-	PerspectiveCamera,
-	BoxGeometry,
-	MeshNormalMaterial,
-	Mesh,
-	Camera,
-	Geometry,
-	Material
-} from 'three';
+import * as THREE from 'three';
+import 'three/OrbitControls';
 
-var camera = new PerspectiveCamera(70, window.innerWidth / window.innerHeight, 0.01, 10);
+var camera = new THREE.PerspectiveCamera(70, window.innerWidth / window.innerHeight, 0.01, 10);
 camera.position.z = 1;
 
-var scene = new Scene();
+var controls = new THREE.OrbitControls(camera);
 
-var geometry = new BoxGeometry(0.2, 0.2, 0.2);
-var material = new MeshNormalMaterial();
+var scene = new THREE.Scene();
 
-var mesh = new Mesh(geometry, material);
+var geometry = new THREE.BoxGeometry(0.2, 0.2, 0.2);
+var material = new THREE.MeshNormalMaterial();
+
+var mesh = new THREE.Mesh(geometry, material);
 scene.add(mesh);
 
-export {scene, camera, mesh};
+function update() {
+	controls.update();
+}
+
+export {scene, camera, update};

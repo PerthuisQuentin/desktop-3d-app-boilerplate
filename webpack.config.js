@@ -1,3 +1,5 @@
+var Path = require('path');
+var Webpack = require('webpack');
 var BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 let babelOptions = {
@@ -46,10 +48,15 @@ module.exports = {
 		]
 	},
 	resolve: {
-		extensions: ['.ts', '.js']
+		extensions: ['.ts', '.js'],
+		alias: {
+			'three/OrbitControls': Path.join(__dirname, 'node_modules/three/examples/js/controls/OrbitControls.js')
+		}
 	},
 	plugins: [
-		new BundleAnalyzerPlugin()
+		new BundleAnalyzerPlugin(),
+		new Webpack.ProvidePlugin({
+			'THREE': 'three'
+		}),
 	]
 };
-
