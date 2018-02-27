@@ -1,14 +1,14 @@
-import * as THREE from 'three';
+import { WebGLRenderer } from 'three';
 
 import { scene, camera, update } from './content';
 
-var renderer: THREE.WebGLRenderer;
+var renderer: WebGLRenderer;
 
 init();
 animate();
 
 function init() {
-	renderer = new THREE.WebGLRenderer({ antialias: true });
+	renderer = new WebGLRenderer({ antialias: true });
 	renderer.setSize(window.innerWidth, window.innerHeight);
 	document.body.appendChild(renderer.domElement);
 }

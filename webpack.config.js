@@ -3,10 +3,15 @@ var Webpack = require('webpack');
 var BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 let babelOptions = {
-	'presets': 'es2015'
+	compact: true,
+	presets: [
+		['es2015', { modules: false }]
+	]
 };
 
 module.exports = {
+	mode: 'development',
+	target: 'web',
 	entry: './src/entry.ts',
 	output: {
 		path: __dirname + '/build',
