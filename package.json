@@ -1,6 +1,6 @@
 {
     "name": "desktop-3d-app-boilerplate",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "description": "Boilerplate to make 3d desktop & web applications with Electron & Three & Webpack & Typescript & Babel",
     "repository": "PerthuisQuentin/desktop-3d-app-boilerplate",
     "author": {
